@@ -60,7 +60,7 @@ while threading.active_count() > 1 or not result_queue.empty():
         #flush the logs
         singleLoggingFile.flush()
         theNow = datetime.datetime.now()  
-        print "move played per minutes :" , movePlayedLastxMinutes/baseMinuteForStats, "previous:",previousmovePlayedLastxMinutes/baseMinuteForStats
+        print "\nmove played per minutes :" , movePlayedLastxMinutes/baseMinuteForStats, "previous:",previousmovePlayedLastxMinutes/baseMinuteForStats
         #add a client or not ?
         if movePlayedLastxMinutes > previousmovePlayedLastxMinutes:
             print "let's add a thread"
